@@ -6,4 +6,5 @@ Dependencies:
 4) pickle
 5) flask
 
+I used Python 3.7. I don't know if other versions of python work or not.
 The webpage runs on localhost. 
