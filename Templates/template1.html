@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="Predict">
+        <h1> INPUT CENSORED SONG LYRICS (FOR EACH CURSE WORD, REPLACE ALL CHARACTERS AFTER THE FIRST LETTER WITH "*") </h1>
+            <form action="{{url_for('predict')}}" method="POST">
+                <textarea id="Lyrics" name="Lyrics" rows="4" cols="50">{{ request.form['Lyrics'] }}</textarea>
+                <button type="Enter" class="btn">Enter</button>
+            </form>
+            <br>
+            <br>
+        <b>{{prediction_text}}</b>
+    </div>
+</body>
+</html>
